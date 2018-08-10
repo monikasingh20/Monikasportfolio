@@ -18,7 +18,7 @@
         "serve:prerender": "cd dist/browser && http-server",
         "serve:ssr": "node dist/server",
         "deploy": "npm run build:ssr && gulp deploy",
-        "postinstall": "ng build --aot -prod"
+        "postinstall": "ng build --prod --build-optimizer --aot"
     },
     "private": true,
     "dependencies": {
